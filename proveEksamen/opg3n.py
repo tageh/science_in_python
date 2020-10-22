@@ -1,15 +1,28 @@
 import numpy as np 
 
-#n = int(input("tall: "))
+n = 10
+summen = 0
 
-list = [i for i in range(1,10)]
-#print(sum(list))
+for x in range(n):
+    summen += 1/(x+1)
 
-for x in list:
-    l = 1/list[x]
-    print(sum(1/list[x]))
+'''
+teller = 0
+summ = 0
+while summ< 10:
+    teller +=1
+    summ += 1/(1+teller)
 
+print(teller)
 
+print(summen)'''
 
-#print(list)
-#print(sum(list))
+sum = 0
+n = 1
+while sum < 10:
+    n+=1
+    ledd = 1/n
+    
+    sum = sum + ledd
+
+print('n skal være',n)
